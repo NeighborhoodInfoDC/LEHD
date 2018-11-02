@@ -492,16 +492,12 @@ year="Year"
 ;
   run;
 
-%tr10_to_stdgeos(in_ds=rac_primary_1, out_ds=rac_primary_geo)
-%tr10_to_stdgeos(in_ds=rac_all_1, out_ds=rac_all_geo)
-%tr10_to_stdgeos(in_ds=wac_primary_1, out_ds=wac_primary_geo)
-%tr10_to_stdgeos(in_ds=wac_all_1, out_ds=wac_all_geo)
 
 **** Finalize data set ****;
 
   %Finalize_data_set( 
   /** Finalize data set parameters **/
-  data=rac_primary_geo,
+  data=rac_primary_1,
   out=rac_primary,
   outlib=LEHD,
   label="LEHD Residence Area Characteristics (Primary Jobs)",
@@ -516,7 +512,7 @@ year="Year"
 
   %Finalize_data_set( 
   /** Finalize data set parameters **/
-  data=rac_all_geo,
+  data=rac_all_1,
   out=rac_all,
   outlib=LEHD,
   label="LEHD Residence Area Characteristics (All Jobs)",
@@ -531,7 +527,7 @@ year="Year"
 
     %Finalize_data_set( 
   /** Finalize data set parameters **/
-  data=wac_primary_geo,
+  data=wac_primary_1,
   out=wac_primary,
   outlib=LEHD,
   label="LEHD Worker Area Characteristics (Primary Jobs)",
@@ -546,7 +542,7 @@ year="Year"
 
   %Finalize_data_set( 
   /** Finalize data set parameters **/
-  data=wac_all_geo,
+  data=wac_all_1,
   out=wac_all,
   outlib=LEHD,
   label="LEHD Worker Area Characteristics (All Jobs)",
