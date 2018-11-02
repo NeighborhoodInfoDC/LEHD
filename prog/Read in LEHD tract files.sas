@@ -16,7 +16,7 @@
 ** Define libraries **;
 %DCdata_lib( LEHD ) 
 
-%let revisions="New file."; 
+%let revisions=New file.; 
 
 
 libname raw "L:\Libraries\LEHD\Raw";
